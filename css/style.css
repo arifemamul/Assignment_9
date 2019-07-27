@@ -1,0 +1,502 @@
+/*font start*/
+@font-face {
+  font-family: cubano;
+  src: url('../fonts/Cubano.ttf');
+}
+@font-face {
+  font-family: BrandonBold;
+  src: url(../fonts/BrandonGrotesque-Bold.ttf);
+}
+@font-face {
+  font-family: BrandonRegular;
+  src: url(../fonts/BrandonGrotesque-Regular.ttf);
+}
+@font-face {
+  font-family: BrandonLight;
+  src: url(../fonts/BrandonGrotesque-Light.ttf);
+}
+@font-face {
+  font-family: BrandonMedium;
+  src: url(../fonts/BrandonGrotesque-Medium.ttf);
+}
+/*font end*/
+*{
+  font-family: BrandonRegular;
+  margin: 0;
+  padding: 0;
+}
+/*header start*/
+header{
+	background-image: url('../image/banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+  /*border:1px solid red;*/
+}
+.head{
+ padding-top:20px;
+ padding-bottom: 100px;
+}
+
+.logo {
+  width: 20%;
+  float: left;
+  position: relative;
+  padding: 5px 0px 0px 50px;
+}
+.logo img{
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+.logo p{
+  font-family: cubano;
+  font-size: 22px;
+  color: white;
+}
+.menu {
+  width: 60;
+  float: right;
+}
+.menu ul{
+    float:  right;  
+}
+.menu ul li{
+  list-style: none;
+  float:  left; 
+
+}
+.menu ul li a{
+  font-family: BrandonMedium;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px 15px;
+  transition: .4s;
+
+}
+.menu ul li:last-child a{
+  padding-right: 0;
+}
+.menu ul li a:hover{
+  color: #BEBBBF;
+}
+.headline {
+  text-align: center;
+  padding: 120px 0;
+}
+.headline h1{
+  font-family: BrandonBold;
+  font-size: 55px;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+}
+.headline h4{
+  font-family: BrandonLight;
+  font-size: 25px;
+  color: #BEBBBF;
+  margin: 0;
+}
+.headline button{
+  font-family: brandonBold;
+  font-size: 20px;
+  color: white;
+  border-style: none;
+  background: transparent;
+  border: 1px solid white;
+  padding: 20px 55px;
+  margin-top: 60px;
+  transition: all .5s;
+}
+.headline button:hover{
+  background: #BEBBBF;
+  color: white;
+  border: 3px solid transparent;
+}
+/*header end*/
+/*blog start*/
+section{
+  background-color: #fafafafa;
+}
+.border{
+  overflow: hidden;
+  margin: 70px 0;
+}
+.blog {
+  width: 70%;
+  float: left;
+}
+.blog h1{
+  font-family: BrandonLight;
+  font-size: 55px;
+  margin: 0;
+}
+.blog b{
+  font-family: BrandonBold;
+}
+.blog p{
+  color: #777777;
+}
+.icon {
+  width: 25%;
+  float: right;
+}
+.icon img{
+  width: 100%;
+}
+/*blog end*/
+/*blog1 start*/
+.bg{
+  background-color: #fafafafa;
+}
+.border1{
+  overflow: hidden;
+  padding: 60px 0;
+}
+.blog1 {
+  width: 70%;
+  float: right;
+}
+.icon1{
+  width: 25%;
+  float: left;
+}
+.icon1 img{
+  width: 100%;
+}
+.blog1 h1{
+  font-family: BrandonLight;
+  font-size: 55px;
+  margin: 0;
+}
+.blog1 b{
+  font-family: BrandonBold;
+}
+.blog1 p{
+  color: #777777;
+}
+/*blog1 end*/
+/*service start*/
+.service {
+}
+.service_wrapper {
+  width: 45%;
+  float: left;
+  box-sizing: border-box;
+  padding: 20px 0;
+}
+.icon{
+  width: 15%;
+  padding: 20px;
+  overflow: hidden;
+  float: left;
+}
+.icon i{
+  font-size: 35px;
+  color: white;
+  width: 70px;
+  height: 70px;
+  float: left;
+  border: 1px solid;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 70px;
+  background: #222222; 
+}
+.service_text {
+  width: 85%;
+}
+.service_text h3{
+  margin: 0;
+  font-size: 21px;
+}
+.service_text p{
+  font-size: 17px;
+}
+/*service end*/
+/*client comment start*/
+
+.client {
+  background: #fafafafa;
+  padding: 45px 0;
+}
+
+.head_line {
+  text-align: center;
+}
+.head_line b{
+  font-family: BrandonBold;
+}
+.comment_section{
+  overflow: hidden;
+}
+.comment {
+  overflow: hidden;
+}
+
+.iconic_image {
+  width: 16%;
+  float: left;
+}
+.iconic_image img{
+  width: 100%;
+  border-radius: 50%;
+}
+.comment_text {
+  width: 65%;
+  float: right;
+  background: #ffffff;
+  margin: 10px;
+  padding: 20px;
+  position: relative;
+  border-radius: 8px;
+}
+.comment_text::before{
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 20px solid #ffffff;
+  position: absolute;
+  left: -20px;
+  top: 70px;
+}
+.quote{
+  font-size: 26px;
+  color: #777777;
+  margin: 0 20px;;
+  padding: 0 25px 10px;
+}
+.name{
+  font-size: 26px;
+  color: white;
+  margin: 0;
+  padding: 0 45px;
+}
+.comment1 {
+  /*overflow: hidden;*/
+}
+.comment_text1 {
+  width: 65%;
+  float: left;
+  padding: 10px 30px;
+  margin: 10px;
+  background: #ffffff;
+  position: relative;
+  border-radius: 8px;
+}
+.comment_text1::after{
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 20px solid white;
+  position: absolute;
+  right: -20px;
+  top: 70px;
+  z-index: 99;
+}
+.iconic_image1 {
+  width: 16%;
+  float: right;
+}
+.iconic_image1 img{
+  width: 100%;
+  border-radius: 50%;
+}
+/*client comment end*/
+/*sponsor company start*/
+.company {
+  padding: 30px 0;
+  margin: 0;
+}
+.company ul {
+  list-style: none;
+}
+.company ul li {
+  float: left;
+  padding: 10px 54px;
+}
+/*sponsor company end*/
+/*team start*/
+
+.team {
+  background: #111111;
+  color: white;
+}
+
+.tagline {
+  text-align: center;
+  padding: 40px 0;
+}
+.tagline h1{
+  font-family: BrandonLight;
+  color: white;
+}
+.tagline b{
+  font-family: BrandonBold;
+}
+.member {
+  float: left;
+  width: 33%;
+  padding: 40px 0;
+}
+
+.photo {
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  border: 2px solid white;
+  display: block;
+  margin: 0 auto;
+}
+.photo img{
+  width: 100%;
+  border-radius: 50%;
+}
+.name {
+  text-align: center;
+}
+.name p{
+  font-family: BrandonBold;
+}
+.name span{
+  font-size: 14px;
+}
+.social_icon {
+  overflow: hidden;
+  width: 140px;
+  margin: 20px auto;
+}
+.social_icon ul{}
+.social_icon ul li{
+  list-style: none;
+  float: left;
+  padding: 0 2px;
+}
+.social_icon ul li a{
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  width: 35px;
+  height: 35px;
+  border: 3px solid white;
+  border-radius: 50%;
+  transition: all .4s;
+}
+.social_icon ul li:last-child {
+}
+.twitter:hover {
+  color: #1DA1F2;
+  border-color: #1DA1F2;
+}
+.facebook:hover {
+  color: #4267B2;
+  border-color: #4267B2;
+}
+.pinterest:hover {
+  color: #E60020;
+  border-color: #E60020;
+}
+.maintain {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  padding: 50px 0px;
+}
+/*team end*/
+/*contact start*/
+.contact {
+  background: #7690C5;
+  color: white;
+  padding: 50px 0;
+}
+
+.information {
+  width: 50%;
+  float: left;
+  overflow: hidden;
+}
+
+.hello {
+  padding-bottom: 30px;
+}
+.hello h1{
+  font-family: BrandonLight;
+  font-size: 70px;
+}
+.hello b{
+  font-family: BrandonBold;
+}
+.hello p{
+  font-size: 20px;
+}
+.informations_text {
+}
+.left{
+  width: 50%;
+  float: left;
+}
+.left ul{
+}
+.left ul li{
+  list-style: none;
+  font-size: 20px;
+  padding: 10px 0;
+}
+.left ul li i{
+  padding-right: 20px;
+}
+.right{
+  width: 50%;
+  float: right;
+}
+.right ul{
+
+}
+.right ul li{
+  list-style: none;
+  font-size: 20px;
+  padding: 10px 0;
+}
+.right ul li i{
+  padding-right: 20px;
+}
+.contact_us {
+  width: 50%;
+  float: right;
+}
+.contact_us form input{
+  width: 100%;
+  font-size: 15px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+.contact_us textarea{
+  padding: 10px 15px;
+  width: 100%;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+/*contact end*/
+/*footer start*/
+footer {
+  background: #7690C5;
+  padding-bottom: 25px;
+}
+footer p {
+  text-align: center;
+  color: #ffffff;
+}
+/*footer end*/
